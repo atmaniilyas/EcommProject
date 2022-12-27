@@ -1,0 +1,16 @@
+body{
+
+}
+.box{
+    border: 1px solid red;
+}
+hr{
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color:#333333;
+}
+.container{
+    width: 90%;
+}
+
