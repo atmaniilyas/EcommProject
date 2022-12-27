@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="common/header :: common-header "/>
 <body>
+<!-- navbar begein -->
 <div>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <a class="navbar-brand" href="#">Ecomm Project</a>
@@ -40,8 +41,52 @@
                 </div>
         </nav>
 </div>
+<!-- navbar end -->
 <div class="container">
-        <h1>Test</h1>
+        <div class="row">
+                <div class="col-xl-8" style="margin-bottom: -100px">
+                        <center>
+                        <h2 class="section-headline"><span class="badge badge-secondary">User Account</span></h1></h2>
+                        </center>
+                </div>
+                <div class="col-xl-4">
+                        <img src="/img/logo.png" class="img-fluid"/>
+                </div>
+        </div>
+        <hr/>
+        <img class="img-fluid" src="/img/wood.png" style="margin-top: -75px"/>
+        <hr/>
+        <div class="row">
+                <div class="col-9 offset-3">
+                        <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home">Create Account</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#menu1">Log In</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#menu2">Forget Password</a>
+                                </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                                <div id="home" class="container tab-pane active"><br>
+                                        <h3>HOME</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div id="menu1" class="container tab-pane fade"><br>
+                                        <h3>Menu 1</h3>
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div id="menu2" class="container tab-pane fade"><br>
+                                        <h3>Menu 2</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
 </div>
 <div th:replace="common/header :: body-bottom-scripts"/>
 </body>
